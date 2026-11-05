@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="nes-title">Spotlight</h1>
+    <main>
+        <form class="nes-container with-title is-rounded" id="search-form">
+            <h2 class="title">Fonte</h2>
+            <div class="nes-field">
+                <label for="search">Buscar palavras que começam com:</label>
+                <input class="nes-input" type="text" id="search" name="search" placeholder="Digite a palavra aqui..." />
+            </div>
+            <div class="nes-field">
+                <label for="source">Fonte da busca:</label>
+                <textarea id="source" name="source" col class="nes-textarea" placeholder="Digite o texto aqui..."></textarea>
+            </div>
+        </form>
+        <div id="result" class="nes-container with-title is-rounded">
+            <h2 class="title">Resultado</h2>
+            <div id="result-content"></div>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
